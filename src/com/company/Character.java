@@ -69,6 +69,7 @@ public class Character
 
     // Misc
     int inpiration;
+    String[] languages = new String[]{"Common"};
 
     // TODO: Should equipment be a class of its own?
 
