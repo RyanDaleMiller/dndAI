@@ -1,16 +1,10 @@
 package com.company;
 
-public class Weapon
+public class Weapon extends Item
 {
-
-    String name;
 
     // Simple, martial, special, etc
     String weaponType;
-    int cost;
-    // g: gold, s: silver, c: copper
-    char coinType;
-    int weight; // In pounds
 
     int damage; // put it as a dice max?
     // b: bludgeoning, p: piercing, s: slashing,
