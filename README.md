@@ -1,7 +1,7 @@
 # AI for Dungeons and Dragons
 A pet project of combining dungeons and dragons 5th edition and an AI learning algorithms.
 
-##First Steps (current steps)
+## First Steps (current steps)
 * Creating the classes that are needed to represent Dungeons and Dragons game play.
 
 Each class will represent some part of a Dungeons and Dragons game.
