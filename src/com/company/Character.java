@@ -1,6 +1,6 @@
 /*
 The big class that will use almost every other class.
-The character will be comprised of race, characterClass and other classes.
+The character will be comprised of race, CharacterClass and other classes.
 */
 package com.company;
 
@@ -13,27 +13,19 @@ public class Character
     // Description
     String name;
 
-    // TODO: race should be a class of its own
-    String race;
-    // TODO: the bellow variables could be put into the race class.
-//    int height; // Maybe just all in inches?
-//    int weight; // In pounds
-//    String hairColor;
-//    String eyeColor;
-//    String skinColor;
+    Race race;
     String alignment;
 
     // Class and level
-    // TODO: characterClass could be a class of its own too
-    String characterClass;
-    // TODO: these variables should be put into the characterClass class
-//    int level;
-//    int healthPoints;
-//    int proficiencyBonus;
+    // TODO: CharacterClass could be a class of its own too
+    CharacterClass characterClass;
 
     // Attributes
     Map<String, Integer[]> attributes = new HashMap<String, Integer[]>();
 
+
+    // TODO: Should all the skills be in a map like the attributes?
+    // TODO: Should they be in Character or CharacterClass?
     // Skills: Strength
     int athletics;
 
@@ -75,11 +67,13 @@ public class Character
 
     public Character(){
         initAttributes();
+        System.out.println("\nYour Attribute Stats:");
         attributes.forEach((k,v) -> System.out.println(k + " = " + v[0].intValue() + ", mod = " + v[1].intValue()));
     }
 
     private void initAttributes(){
         Scanner attScanner = new Scanner(System.in);
+        // TODO: Fixed having a capital letter at the beginning of the word. That could lead to problems in the future.
         String atts[] = new String[]{"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"};
 
         for(int i = 0; i < atts.length; i++){
