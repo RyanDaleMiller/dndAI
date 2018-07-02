@@ -1,6 +1,9 @@
 # AI for Dungeons and Dragons
 A pet project of combining dungeons and dragons 5th edition and an AI learning algorithms.
 
+# ON HOLD
+After doing some research about AI and machine learning I decided to look at smaller projects and building a portfolio before continuing this large of a project.
+
 ## First Steps (current steps)
 * Creating the classes that are needed to represent Dungeons and Dragons game play.
 
